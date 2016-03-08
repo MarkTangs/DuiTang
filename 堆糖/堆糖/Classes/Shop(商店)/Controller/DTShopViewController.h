@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTShopTableViewController : UITableViewController
+@interface DTShopViewController : UIViewController
 
 @end

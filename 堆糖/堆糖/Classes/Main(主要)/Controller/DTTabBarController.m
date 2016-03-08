@@ -11,7 +11,7 @@
 
 #import "DTHomeTableViewController.h"
 #import "DTDiscoverTableViewController.h"
-#import "DTShopTableViewController.h"
+#import "DTShopViewController.h"
 #import "DTMySettingTableViewController.h"
 
 #import "UIImage+DT.h"
@@ -43,7 +43,7 @@
     [self setupOneChildViewController:discover image:[UIImage imageWithRenderOriginalName:@"tab_icon_explore"] selImage:[UIImage imageWithRenderOriginalName:@"tab_icon_explore_highlight"] title:@"发现"buttonTitle:@"发现"];
     
     /** 商店*/
-    DTShopTableViewController *shop = [[DTShopTableViewController alloc] init];
+    DTShopViewController *shop = [[DTShopViewController alloc] init];
     [self setupOneChildViewController:shop image:[UIImage imageWithRenderOriginalName:@"tab_icon_store"] selImage:[UIImage imageWithRenderOriginalName:@"tab_icon_store_highlight"] title:@""buttonTitle:@"商店"];
     
     /** 我*/

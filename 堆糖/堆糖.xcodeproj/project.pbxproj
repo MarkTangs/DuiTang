@@ -14,7 +14,7 @@
 		7E26E5861C7ED23200E31195 /* DTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E5851C7ED23200E31195 /* DTNavigationController.m */; };
 		7E26E5891C7F10F200E31195 /* DTHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E5881C7F10F200E31195 /* DTHomeTableViewController.m */; };
 		7E26E58C1C7F112A00E31195 /* DTDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E58B1C7F112A00E31195 /* DTDiscoverTableViewController.m */; };
-		7E26E58F1C7F115D00E31195 /* DTShopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E58E1C7F115D00E31195 /* DTShopTableViewController.m */; };
+		7E26E58F1C7F115D00E31195 /* DTShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E58E1C7F115D00E31195 /* DTShopViewController.m */; };
 		7E26E5921C7F119C00E31195 /* DTMySettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E5911C7F119C00E31195 /* DTMySettingTableViewController.m */; };
 		7E89A68E1C8D299600A1CFEC /* UIColor+DT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89A68D1C8D299600A1CFEC /* UIColor+DT.m */; };
 		7E992FC01C7DF42800C8E0BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E992FBF1C7DF42800C8E0BF /* Assets.xcassets */; };
@@ -40,8 +40,8 @@
 		7E26E5881C7F10F200E31195 /* DTHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTHomeTableViewController.m; sourceTree = "<group>"; };
 		7E26E58A1C7F112A00E31195 /* DTDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDiscoverTableViewController.h; sourceTree = "<group>"; };
 		7E26E58B1C7F112A00E31195 /* DTDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTDiscoverTableViewController.m; sourceTree = "<group>"; };
-		7E26E58D1C7F115D00E31195 /* DTShopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTShopTableViewController.h; sourceTree = "<group>"; };
-		7E26E58E1C7F115D00E31195 /* DTShopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTShopTableViewController.m; sourceTree = "<group>"; };
+		7E26E58D1C7F115D00E31195 /* DTShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTShopViewController.h; sourceTree = "<group>"; };
+		7E26E58E1C7F115D00E31195 /* DTShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTShopViewController.m; sourceTree = "<group>"; };
 		7E26E5901C7F119C00E31195 /* DTMySettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMySettingTableViewController.h; sourceTree = "<group>"; };
 		7E26E5911C7F119C00E31195 /* DTMySettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMySettingTableViewController.m; sourceTree = "<group>"; };
 		7E89A68C1C8D299600A1CFEC /* UIColor+DT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DT.h"; sourceTree = "<group>"; };
@@ -90,13 +90,13 @@
 		7E992FB21C7DF42800C8E0BF /* 堆糖 */ = {
 			isa = PBXGroup;
 			children = (
-				7E992FEF1C7E060000C8E0BF /* MySetting(设置) */,
-				7E992FF31C7E060000C8E0BF /* Shop(商店) */,
-				7E992FD31C7E060000C8E0BF /* Discover(发现) */,
 				7E992FD71C7E060000C8E0BF /* Home(首页) */,
-				7E992FDB1C7E060000C8E0BF /* Login(登录) */,
+				7E992FD31C7E060000C8E0BF /* Discover(发现) */,
+				7E992FF31C7E060000C8E0BF /* Shop(商店) */,
+				7E992FEF1C7E060000C8E0BF /* MySetting(设置) */,
 				7E992FDF1C7E060000C8E0BF /* Main(主要) */,
 				7E992FE31C7E060000C8E0BF /* NewFeature(新特性) */,
+				7E992FDB1C7E060000C8E0BF /* Login(登录) */,
 				7E992FE71C7E060000C8E0BF /* Other */,
 				7E992FED1C7E060000C8E0BF /* Resources */,
 				7E992FF71C7E060000C8E0BF /* Tool(业务逻辑) */,
@@ -375,8 +375,8 @@
 		7E992FF41C7E060000C8E0BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7E26E58D1C7F115D00E31195 /* DTShopTableViewController.h */,
-				7E26E58E1C7F115D00E31195 /* DTShopTableViewController.m */,
+				7E26E58D1C7F115D00E31195 /* DTShopViewController.h */,
+				7E26E58E1C7F115D00E31195 /* DTShopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				7EA688B91C82080D00764864 /* DTIaaViewController.m in Sources */,
 				7E26E5831C7E0B5700E31195 /* DTNewFeatureViewController.m in Sources */,
 				7E26E5861C7ED23200E31195 /* DTNavigationController.m in Sources */,
-				7E26E58F1C7F115D00E31195 /* DTShopTableViewController.m in Sources */,
+				7E26E58F1C7F115D00E31195 /* DTShopViewController.m in Sources */,
 				7E992FFA1C7E060000C8E0BF /* AppDelegate.m in Sources */,
 				7E992FFB1C7E060000C8E0BF /* main.m in Sources */,
 				7E26E5891C7F10F200E31195 /* DTHomeTableViewController.m in Sources */,
