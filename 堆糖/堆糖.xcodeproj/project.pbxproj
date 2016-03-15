@@ -24,6 +24,9 @@
 		7EA688B51C82050D00764864 /* UIImage+DT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA688B21C82050D00764864 /* UIImage+DT.m */; };
 		7EA688B61C82050D00764864 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA688B41C82050D00764864 /* UIView+Frame.m */; };
 		7EA688B91C82080D00764864 /* DTIaaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA688B81C82080D00764864 /* DTIaaViewController.m */; };
+		7EFF6E6A1C98703800CC06AF /* DTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF6E691C98703800CC06AF /* DTBaseTableViewController.m */; };
+		7EFF6E6D1C98712700CC06AF /* DTSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF6E6C1C98712700CC06AF /* DTSettingGroup.m */; };
+		7EFF6E701C98798600CC06AF /* UIBarButtonItem+DT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF6E6F1C98798600CC06AF /* UIBarButtonItem+DT.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,12 @@
 		7EA688B41C82050D00764864 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		7EA688B71C82080D00764864 /* DTIaaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTIaaViewController.h; sourceTree = "<group>"; };
 		7EA688B81C82080D00764864 /* DTIaaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTIaaViewController.m; sourceTree = "<group>"; };
+		7EFF6E681C98703800CC06AF /* DTBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseTableViewController.h; sourceTree = "<group>"; };
+		7EFF6E691C98703800CC06AF /* DTBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseTableViewController.m; sourceTree = "<group>"; };
+		7EFF6E6B1C98712700CC06AF /* DTSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSettingGroup.h; sourceTree = "<group>"; };
+		7EFF6E6C1C98712700CC06AF /* DTSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSettingGroup.m; sourceTree = "<group>"; };
+		7EFF6E6E1C98798600CC06AF /* UIBarButtonItem+DT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DT.h"; sourceTree = "<group>"; };
+		7EFF6E6F1C98798600CC06AF /* UIBarButtonItem+DT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DT.m"; sourceTree = "<group>"; };
 		B3B8017EBB3CDAD81B8019F2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC0EFE617FCC5F7DB826C12 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -324,6 +333,8 @@
 				7EA688B41C82050D00764864 /* UIView+Frame.m */,
 				7E89A68C1C8D299600A1CFEC /* UIColor+DT.h */,
 				7E89A68D1C8D299600A1CFEC /* UIColor+DT.m */,
+				7EFF6E6E1C98798600CC06AF /* UIBarButtonItem+DT.h */,
+				7EFF6E6F1C98798600CC06AF /* UIBarButtonItem+DT.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -357,6 +368,10 @@
 		7E992FF01C7E060000C8E0BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7EFF6E681C98703800CC06AF /* DTBaseTableViewController.h */,
+				7EFF6E691C98703800CC06AF /* DTBaseTableViewController.m */,
+				7EFF6E6B1C98712700CC06AF /* DTSettingGroup.h */,
+				7EFF6E6C1C98712700CC06AF /* DTSettingGroup.m */,
 				7E26E5901C7F119C00E31195 /* DTMySettingTableViewController.h */,
 				7E26E5911C7F119C00E31195 /* DTMySettingTableViewController.m */,
 			);
@@ -567,8 +582,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFF6E6A1C98703800CC06AF /* DTBaseTableViewController.m in Sources */,
 				7E26E57D1C7E09E400E31195 /* DTSaveTool.m in Sources */,
 				7E26E5921C7F119C00E31195 /* DTMySettingTableViewController.m in Sources */,
+				7EFF6E6D1C98712700CC06AF /* DTSettingGroup.m in Sources */,
 				7E89A68E1C8D299600A1CFEC /* UIColor+DT.m in Sources */,
 				7E26E58C1C7F112A00E31195 /* DTDiscoverTableViewController.m in Sources */,
 				7EA688B51C82050D00764864 /* UIImage+DT.m in Sources */,
@@ -579,6 +596,7 @@
 				7E26E5861C7ED23200E31195 /* DTNavigationController.m in Sources */,
 				7E26E58F1C7F115D00E31195 /* DTShopViewController.m in Sources */,
 				7E992FFA1C7E060000C8E0BF /* AppDelegate.m in Sources */,
+				7EFF6E701C98798600CC06AF /* UIBarButtonItem+DT.m in Sources */,
 				7E992FFB1C7E060000C8E0BF /* main.m in Sources */,
 				7E26E5891C7F10F200E31195 /* DTHomeTableViewController.m in Sources */,
 				7E26E57A1C7E089400E31195 /* DTRootVC.m in Sources */,

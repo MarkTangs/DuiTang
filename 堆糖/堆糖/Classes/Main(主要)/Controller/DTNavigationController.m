@@ -7,6 +7,7 @@
 //
 
 #import "DTNavigationController.h"
+#import "UIBarButtonItem+DT.h"
 
 @interface DTNavigationController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 /** 系统手势代理 */
@@ -34,24 +35,13 @@
         // 设置导航条前景色
         [bar setTintColor:[UIColor whiteColor]];
         
-        //    bar
-        // 获取到导航条按钮的标识
-        UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedIn:self, nil];
-//        [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[self]];
-        // 修改返回按钮标题的位置
-        [item setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -100) forBarMetrics:UIBarMetricsDefault];
+       
     }
     
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-   
-    
-    
-    // 1.先修改系统的手势,系统没有给我们提供属性
-    //    NSLog(@"%@",self.interactivePopGestureRecognizer);
-//    UIScreenEdgePanGestureRecognizer *gest = self.interactivePopGestureRecognizer;
+
     
     id target = self.interactivePopGestureRecognizer.delegate;
     //
@@ -68,27 +58,28 @@
 }
 
 #pragma mark - UIGestureRecognizerDelegate
-// 当开始滑动的就会调用 如果返回YES ,可以滑动 返回NO,禁止手势
+
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    // 当是跟控制器不让移除(禁止), 费根控制器,允许移除控制
-    //    NSLog(@"%ld",self.viewControllers.count);
+
     BOOL open = self.viewControllers.count > 1;
     
     return open;
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
-    // 当非根控制器隐藏底部tabbar
+
     
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
+        
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithNorImage:[UIImage imageNamed:@"icon_back_light"] andHighlightImage:[UIImage imageNamed:@"icon_back_light"] Target:self action:@selector(back) Title:nil];
     }
-    //    NSLog(@"%ld",self.viewControllers.count);
-    
-    // 执行这一行代码将控制器压栈
     [super pushViewController:viewController animated:animated];
     
     
 }
-
+- (void)back
+{
+    [self popViewControllerAnimated:YES];
+}
 @end
