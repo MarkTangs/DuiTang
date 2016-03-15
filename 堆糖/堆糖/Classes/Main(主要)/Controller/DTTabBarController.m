@@ -69,7 +69,9 @@
     vc.tabBarItem.selectedImage = selImage;
     vc.tabBarItem.title = buttonTitle;
 
-    [vc.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor DTMenuSeletColor],NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    [vc.tabBarItem setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:[UIColor DTMenuSeletColor],NSForegroundColorAttributeName, nil]
+                                 forState:UIControlStateSelected];
     
     [vc.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor DTMenuNormalColor],NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
    
