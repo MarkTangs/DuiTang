@@ -8,6 +8,7 @@
 
 #import "DTNavigationController.h"
 #import "UIBarButtonItem+DT.h"
+#import "DTShopViewController.h"
 
 @interface DTNavigationController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 /** 系统手势代理 */
@@ -19,7 +20,7 @@
 
     if (self == [DTNavigationController class]) {
 
-        UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self,nil];
+        UINavigationBar *nav = [UINavigationBar appearanceWhenContainedIn:self,nil];
 
         // 设置字体颜色大小
         NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
@@ -29,13 +30,15 @@
         // 字体颜色
         dictM[NSForegroundColorAttributeName] = [UIColor blackColor];
         
-        [bar setTitleTextAttributes:dictM];
+        [nav setTitleTextAttributes:dictM];
         
         
         // 设置导航条前景色
-        [bar setTintColor:[UIColor whiteColor]];
-        
+        [nav setTintColor:[UIColor whiteColor]];
+        [nav setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
        
+        
+        
     }
     
 }
@@ -71,8 +74,10 @@
     
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
-        
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithNorImage:[UIImage imageNamed:@"icon_back_light"] andHighlightImage:[UIImage imageNamed:@"icon_back_light"] Target:self action:@selector(back) Title:nil];
+        if ([viewController isKindOfClass:[DTShopViewController class]]) {
+          viewController.navigationItem.leftBarButtonItem = nil;
+        }
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithNorImage:[UIImage imageNamed:@"icon_back_dark"] andHighlightImage:[UIImage imageNamed:@"icon_back_dark"] Target:self action:@selector(back) Title:nil];
     }
     [super pushViewController:viewController animated:animated];
     

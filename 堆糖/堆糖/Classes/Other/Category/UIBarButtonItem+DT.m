@@ -18,7 +18,7 @@
     
     [btn setImage:Norimage forState:UIControlStateNormal];
     [btn setImage:Higimage forState:UIControlStateHighlighted];
-//    [btn setContentEdgeInsets:UIEdgeInsetsMake(0, -15, 0, 0)];
+    [btn setContentEdgeInsets:UIEdgeInsetsMake(0, -10, 0, 0)];
 //    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 //    [btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
     
@@ -30,4 +30,6 @@
     
     return [[UIBarButtonItem alloc]initWithCustomView:contenView];
 }
+
+
 @end

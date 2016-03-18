@@ -17,6 +17,7 @@
 		7E26E58C1C7F112A00E31195 /* DTDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E58B1C7F112A00E31195 /* DTDiscoverTableViewController.m */; };
 		7E26E58F1C7F115D00E31195 /* DTShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E58E1C7F115D00E31195 /* DTShopViewController.m */; };
 		7E26E5921C7F119C00E31195 /* DTMySettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E5911C7F119C00E31195 /* DTMySettingTableViewController.m */; };
+		7E3488FD1C9C60B20008471F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3488FC1C9C60B20008471F /* WebKit.framework */; };
 		7E89A68E1C8D299600A1CFEC /* UIColor+DT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89A68D1C8D299600A1CFEC /* UIColor+DT.m */; };
 		7E992FC01C7DF42800C8E0BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E992FBF1C7DF42800C8E0BF /* Assets.xcassets */; };
 		7E992FFA1C7E060000C8E0BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E992FE91C7E060000C8E0BF /* AppDelegate.m */; };
@@ -49,6 +50,7 @@
 		7E26E58E1C7F115D00E31195 /* DTShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTShopViewController.m; sourceTree = "<group>"; };
 		7E26E5901C7F119C00E31195 /* DTMySettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMySettingTableViewController.h; sourceTree = "<group>"; };
 		7E26E5911C7F119C00E31195 /* DTMySettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMySettingTableViewController.m; sourceTree = "<group>"; };
+		7E3488FC1C9C60B20008471F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		7E89A68C1C8D299600A1CFEC /* UIColor+DT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DT.h"; sourceTree = "<group>"; };
 		7E89A68D1C8D299600A1CFEC /* UIColor+DT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DT.m"; sourceTree = "<group>"; };
 		7E992FB01C7DF42800C8E0BF /* DT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3488FD1C9C60B20008471F /* WebKit.framework in Frameworks */,
 				0829E46F87B9E8B8C0A2F819 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +460,7 @@
 		ACACA4FF6F058CF1E6825B74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E3488FC1C9C60B20008471F /* WebKit.framework */,
 				B3B8017EBB3CDAD81B8019F2 /* libPods.a */,
 			);
 			name = Frameworks;
