@@ -17,7 +17,9 @@
 		7E26E58C1C7F112A00E31195 /* DTDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E58B1C7F112A00E31195 /* DTDiscoverTableViewController.m */; };
 		7E26E58F1C7F115D00E31195 /* DTShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E58E1C7F115D00E31195 /* DTShopViewController.m */; };
 		7E26E5921C7F119C00E31195 /* DTMySettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26E5911C7F119C00E31195 /* DTMySettingTableViewController.m */; };
-		7E3488FD1C9C60B20008471F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3488FC1C9C60B20008471F /* WebKit.framework */; };
+		7E2D61601CA1B6B0004CA705 /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D615E1CA1B6B0004CA705 /* HeaderCollectionReusableView.m */; };
+		7E2D61611CA1B6B0004CA705 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2D615F1CA1B6B0004CA705 /* HeaderCollectionReusableView.xib */; };
+		7E34A7EB1CA12DAD0026184E /* ContenItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E34A7EA1CA12DAD0026184E /* ContenItems.m */; };
 		7E89A68E1C8D299600A1CFEC /* UIColor+DT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89A68D1C8D299600A1CFEC /* UIColor+DT.m */; };
 		7E992FC01C7DF42800C8E0BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E992FBF1C7DF42800C8E0BF /* Assets.xcassets */; };
 		7E992FFA1C7E060000C8E0BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E992FE91C7E060000C8E0BF /* AppDelegate.m */; };
@@ -25,6 +27,10 @@
 		7EA688B51C82050D00764864 /* UIImage+DT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA688B21C82050D00764864 /* UIImage+DT.m */; };
 		7EA688B61C82050D00764864 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA688B41C82050D00764864 /* UIView+Frame.m */; };
 		7EA688B91C82080D00764864 /* DTIaaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA688B81C82080D00764864 /* DTIaaViewController.m */; };
+		7EED82F81CA02DBD00298A66 /* ContentGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EED82F71CA02DBD00298A66 /* ContentGroupItem.m */; };
+		7EED82FC1CA02FE600298A66 /* DTDiscoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EED82FA1CA02FE600298A66 /* DTDiscoverCollectionViewCell.m */; };
+		7EED82FD1CA02FE600298A66 /* DTDiscoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EED82FB1CA02FE600298A66 /* DTDiscoverCollectionViewCell.xib */; };
+		7EED82FF1CA0406500298A66 /* DTDiscoverTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EED82FE1CA0406500298A66 /* DTDiscoverTableViewController.storyboard */; };
 		7EFF6E6A1C98703800CC06AF /* DTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF6E691C98703800CC06AF /* DTBaseTableViewController.m */; };
 		7EFF6E6D1C98712700CC06AF /* DTSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF6E6C1C98712700CC06AF /* DTSettingGroup.m */; };
 		7EFF6E701C98798600CC06AF /* UIBarButtonItem+DT.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF6E6F1C98798600CC06AF /* UIBarButtonItem+DT.m */; };
@@ -50,7 +56,11 @@
 		7E26E58E1C7F115D00E31195 /* DTShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTShopViewController.m; sourceTree = "<group>"; };
 		7E26E5901C7F119C00E31195 /* DTMySettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMySettingTableViewController.h; sourceTree = "<group>"; };
 		7E26E5911C7F119C00E31195 /* DTMySettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMySettingTableViewController.m; sourceTree = "<group>"; };
-		7E3488FC1C9C60B20008471F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7E2D615D1CA1B6B0004CA705 /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		7E2D615E1CA1B6B0004CA705 /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		7E2D615F1CA1B6B0004CA705 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		7E34A7E91CA12DAD0026184E /* ContenItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContenItems.h; sourceTree = "<group>"; };
+		7E34A7EA1CA12DAD0026184E /* ContenItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContenItems.m; sourceTree = "<group>"; };
 		7E89A68C1C8D299600A1CFEC /* UIColor+DT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DT.h"; sourceTree = "<group>"; };
 		7E89A68D1C8D299600A1CFEC /* UIColor+DT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DT.m"; sourceTree = "<group>"; };
 		7E992FB01C7DF42800C8E0BF /* DT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +75,12 @@
 		7EA688B41C82050D00764864 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		7EA688B71C82080D00764864 /* DTIaaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTIaaViewController.h; sourceTree = "<group>"; };
 		7EA688B81C82080D00764864 /* DTIaaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTIaaViewController.m; sourceTree = "<group>"; };
+		7EED82F61CA02DBD00298A66 /* ContentGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentGroupItem.h; sourceTree = "<group>"; };
+		7EED82F71CA02DBD00298A66 /* ContentGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentGroupItem.m; sourceTree = "<group>"; };
+		7EED82F91CA02FE600298A66 /* DTDiscoverCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDiscoverCollectionViewCell.h; sourceTree = "<group>"; };
+		7EED82FA1CA02FE600298A66 /* DTDiscoverCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTDiscoverCollectionViewCell.m; sourceTree = "<group>"; };
+		7EED82FB1CA02FE600298A66 /* DTDiscoverCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTDiscoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		7EED82FE1CA0406500298A66 /* DTDiscoverTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DTDiscoverTableViewController.storyboard; sourceTree = "<group>"; };
 		7EFF6E681C98703800CC06AF /* DTBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseTableViewController.h; sourceTree = "<group>"; };
 		7EFF6E691C98703800CC06AF /* DTBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseTableViewController.m; sourceTree = "<group>"; };
 		7EFF6E6B1C98712700CC06AF /* DTSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSettingGroup.h; sourceTree = "<group>"; };
@@ -80,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3488FD1C9C60B20008471F /* WebKit.framework in Frameworks */,
 				0829E46F87B9E8B8C0A2F819 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +173,7 @@
 			children = (
 				7E26E58A1C7F112A00E31195 /* DTDiscoverTableViewController.h */,
 				7E26E58B1C7F112A00E31195 /* DTDiscoverTableViewController.m */,
+				7EED82FE1CA0406500298A66 /* DTDiscoverTableViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +181,10 @@
 		7E992FD51C7E060000C8E0BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7EED82F61CA02DBD00298A66 /* ContentGroupItem.h */,
+				7EED82F71CA02DBD00298A66 /* ContentGroupItem.m */,
+				7E34A7E91CA12DAD0026184E /* ContenItems.h */,
+				7E34A7EA1CA12DAD0026184E /* ContenItems.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +192,12 @@
 		7E992FD61C7E060000C8E0BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7EED82F91CA02FE600298A66 /* DTDiscoverCollectionViewCell.h */,
+				7EED82FA1CA02FE600298A66 /* DTDiscoverCollectionViewCell.m */,
+				7EED82FB1CA02FE600298A66 /* DTDiscoverCollectionViewCell.xib */,
+				7E2D615D1CA1B6B0004CA705 /* HeaderCollectionReusableView.h */,
+				7E2D615E1CA1B6B0004CA705 /* HeaderCollectionReusableView.m */,
+				7E2D615F1CA1B6B0004CA705 /* HeaderCollectionReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,7 +486,6 @@
 		ACACA4FF6F058CF1E6825B74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E3488FC1C9C60B20008471F /* WebKit.framework */,
 				B3B8017EBB3CDAD81B8019F2 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -527,7 +552,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2D61611CA1B6B0004CA705 /* HeaderCollectionReusableView.xib in Resources */,
+				7EED82FF1CA0406500298A66 /* DTDiscoverTableViewController.storyboard in Resources */,
 				7E992FC01C7DF42800C8E0BF /* Assets.xcassets in Resources */,
+				7EED82FD1CA02FE600298A66 /* DTDiscoverCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,12 +618,16 @@
 				7E26E57D1C7E09E400E31195 /* DTSaveTool.m in Sources */,
 				7E26E5921C7F119C00E31195 /* DTMySettingTableViewController.m in Sources */,
 				7EFF6E6D1C98712700CC06AF /* DTSettingGroup.m in Sources */,
+				7E2D61601CA1B6B0004CA705 /* HeaderCollectionReusableView.m in Sources */,
 				7E89A68E1C8D299600A1CFEC /* UIColor+DT.m in Sources */,
 				7E26E58C1C7F112A00E31195 /* DTDiscoverTableViewController.m in Sources */,
 				7EA688B51C82050D00764864 /* UIImage+DT.m in Sources */,
+				7EED82F81CA02DBD00298A66 /* ContentGroupItem.m in Sources */,
+				7E34A7EB1CA12DAD0026184E /* ContenItems.m in Sources */,
 				7E26E5801C7E0AA700E31195 /* DTTabBarController.m in Sources */,
 				7EA688B61C82050D00764864 /* UIView+Frame.m in Sources */,
 				7EA688B91C82080D00764864 /* DTIaaViewController.m in Sources */,
+				7EED82FC1CA02FE600298A66 /* DTDiscoverCollectionViewCell.m in Sources */,
 				7E26E5831C7E0B5700E31195 /* DTNewFeatureViewController.m in Sources */,
 				7E26E5861C7ED23200E31195 /* DTNavigationController.m in Sources */,
 				7E26E58F1C7F115D00E31195 /* DTShopViewController.m in Sources */,

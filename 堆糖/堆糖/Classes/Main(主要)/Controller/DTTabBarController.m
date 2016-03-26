@@ -39,7 +39,8 @@
     [self setupOneChildViewController:home image:[UIImage imageWithRenderOriginalName:@"tab_icon_home"] selImage:[UIImage imageWithRenderOriginalName:@"tab_icon_home_highlight"] title:@"每日精选"buttonTitle:@"首页"];
     
     /** 发现*/
-    DTDiscoverTableViewController *discover = [[DTDiscoverTableViewController alloc] init];
+    UIStoryboard *discoverStoryBoard = [UIStoryboard storyboardWithName:@"DTDiscoverTableViewController" bundle:nil];
+    DTDiscoverTableViewController *discover = [discoverStoryBoard instantiateInitialViewController];
     [self setupOneChildViewController:discover image:[UIImage imageWithRenderOriginalName:@"tab_icon_explore"] selImage:[UIImage imageWithRenderOriginalName:@"tab_icon_explore_highlight"] title:@"发现"buttonTitle:@"发现"];
     
     /** 商店*/
